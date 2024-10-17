@@ -5,12 +5,12 @@ import java.util.ArrayList;
 public class SportsTest {
     //ATTENTION! THIS PROJECT WAS CODED IN OPENJDK-23
     public static void main(String[] args) {
-        createInstances();
+        //createInstances();
 
         var list = createArray();
 
         //Beispiel 8
-        for (Sports sport: list){
+        for (Sports sport : list) {
             if (sport.getCountryOfOrigin() == null)
                 sport.setCountryOfOrigin("Undef.");
         }
@@ -64,8 +64,8 @@ public class SportsTest {
 
     public static boolean contains(ArrayList<Sports> array, Sports sport) {
         var result = false;
-        for (Sports sport1: array) {
-            if (sport1.equals(sport)){
+        for (Sports sport1 : array) {
+            if (sport1.equals(sport)) {
                 result = true;
                 break;
             }
